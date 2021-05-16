@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APP Consultas</title>
-    <link rel="stylesheet" href="../bootstrap-5/bootstrap.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="../bootstrap-5/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
     <main class="container">
@@ -14,8 +14,9 @@
             <h1>APP Consultas</h1>
             <hr>
         </header>
-        <nav>
-            <a href="./medicos/medicos-listar.php"><img src="../img/medico.png" alt="">Cadastro de médicos</a>
-            <a href="#"><img src="../img/paciente.png" alt="">Cadastro de pacientes</a>
-            <a href="#"><img src="../img/agenda.png" alt="">Agendamento de consultas</a>
+        <nav class="navbar navbar-expand-md">
+            <a href="./medicos/medicos-listar.php" class="btn"><img src="../img/medico.png">Cadastro de médicos</a>
+            <a href="#" class="btn"><img src="../img/paciente.png">Cadastro de pacientes</a>
+            <a href="#" class="btn"><img src="../img/agenda.png">Agendamento de consultas</a>
         </nav>
+        <hr>
