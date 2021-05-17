@@ -11,7 +11,7 @@
 <body>
     <main class="container">
         <header>
-            <h1>APP Consultas</h1>
+            <a href="../index.php" class="btn"><h1>APP Consultas</h1></a>
             <hr>
         </header>
         <nav class="navbar navbar-expand-md">
