@@ -18,26 +18,22 @@ while($medico = mysqli_fetch_assoc($listaDeMedicos)){
 }
 ?>
 
-<h2>Alterar</h2>
+<h2 class="text-center mb-5">Alterar</h2>
 <form name="formulario-inserir-medicos" method="post" action="medicos-alterar.php">
 
     <input name="id_medico" type="hidden" value="<?php echo $id_medico;?>">
-    <div class="row">
-        <p class="col-6">
+    <div class="row justify-content-center">
+        <p class="col-md-6">
             <label class="form-label">Nome:</label>
             <input name="nome" class="form-control" value="<?php echo $nome;?>" required>
         </p>
-        <p class="col-6">
+        <p class="col-md-4">
             <label class="form-label">Telefone:</label>
             <input name="telefone" class="form-control" value="<?php echo $telefone; ?>" required>
         </p>
     </div>
-    <div class="row">
-        <p class="col-6">
-            <label class="form-label">CRM:</label>
-            <input name="crm" value="<?php echo $crm; ?>" class="form-control" required>
-        </p>
-        <p class="col-6">
+    <div class="row justify-content-center">
+        <p class="col-md-6">
             <label class="form-label">Especialidade:</label>
             <select name="especialidade" class="form-select" required>
                 <option value="Cardiologista" <?php if($especialidade == 'Cardiologista'){ echo "selected "; } ?>>Cardiologista</option>
@@ -45,9 +41,15 @@ while($medico = mysqli_fetch_assoc($listaDeMedicos)){
                 <option value="Ortopedista" <?php if($especialidade == 'Ortopedista'){ echo "selected "; } ?>>Ortopedista</option>
             </select>
         </p>
+        <p class="col-md-4">
+            <label class="form-label">CRM:</label>
+            <input name="crm" value="<?php echo $crm; ?>" class="form-control" required>
+        </p>
     </div>
-    <p>
-        <button type="subtmit" class="btn btn-success">Salvar</button>
-    </p>
+    <div class="row justify-content-end">
+        <p class="col-md-2">
+            <button type="subtmit" class="btn btn-success">Salvar</button>
+        </p>
+    </div>
 </form>
 <?php include "../includes/rodape.php" ; ?>
