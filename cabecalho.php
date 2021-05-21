@@ -17,6 +17,6 @@
         <nav class="navbar">
             <a href="medicos/medicos-listar.php" class="btn"><img src="img/medico.png">Cadastro de médicos</a>
             <a href="pacientes/pacientes-listar.php" class="btn"><img src="img/paciente.png">Cadastro de pacientes</a>
-            <a href="#" class="btn"><img src="img/agenda.png">Agendamento de consultas</a>
+            <a href="agenda/agenda-listar.php" class="btn"><img src="img/agenda.png">Agendamento de consultas</a>
         </nav>
         <hr>
