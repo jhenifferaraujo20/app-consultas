@@ -11,8 +11,7 @@ $sqlInserir = "INSERT INTO tb_medicos(nome, telefone, crm, especialidade) VALUES
 $resultado = mysqli_query($conexao, $sqlInserir);
 
 if($resultado){
-    echo "Médico inserido com sucesso!<br>";
-    echo "<a href='medicos-listar.php'>voltar</a>";
+    header('Location: medicos-listar.php');
 }else{
     echo "Algum erro aconteceu";
 }

@@ -19,8 +19,7 @@ $sqlAlterar = "UPDATE tb_pacientes SET
 $resultado = mysqli_query($conexao , $sqlAlterar);
 
 if($resultado){
-    echo "Alterado com sucesso!<br>";
-    echo "<a href='pacientes-listar.php'>Voltar</a>";
+    header('Location: pacientes-listar.php');
 }else{
     echo "Ocorreu algum erro";
 }

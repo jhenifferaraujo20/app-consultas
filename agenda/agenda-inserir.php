@@ -12,8 +12,7 @@ $sqlInserir = "INSERT INTO tb_agenda(data, hora, id_medico, sala, id_paciente) V
 $resultado = mysqli_query($conexao, $sqlInserir);
 
 if($resultado){
-    echo "Consulta agendada com sucesso!<br>";
-    echo "<a href='agenda-listar.php'>voltar</a>";
+    header('Location: agenda-listar.php?mensagem=cadastrado');
 }else{
     echo "Algum erro aconteceu";
 }

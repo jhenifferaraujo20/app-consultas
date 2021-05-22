@@ -83,7 +83,7 @@ while($agenda = mysqli_fetch_assoc($listaDeAgenda)){
     </div>
     <div class="row justify-content-end">
         <p class="col-md-2">
-            <button type="subtmit" class="btn btn-success">Agendar</button>
+            <button type="subtmit" class="btn btn-success">Salvar</button>
         </p>
     </div>
 </form>
